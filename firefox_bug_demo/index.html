@@ -12,14 +12,12 @@
     		var destURL = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Beijing_bouddhist_monk_2009_IMG_1486.JPG/800px-Beijing_bouddhist_monk_2009_IMG_1486.JPG';
     		var text = 'Good job';
 	    	if ((window.location.hash === '') || (window.location.hash === '#')) {
-		    	window.location.hash = '(demo)x';
-          return
-		    } else if (window.location.hash !== '#(demo)') && (window.location.hash !== '#(demo') {
+		    	window.location.hash = '(demo)';
+		    } else if (window.location.hash !== '#(demo)') {
 		    	destURL = 'https://upload.wikimedia.org/wikipedia/commons/d/da/Disapprove.jpg';
 		    	text = 'Bad job';
-		    } else{
-          document.getElementById('demo').innerHtml = 'I will redirect here in a few moments: <a href="' + destURL + '">' + text + '</a>';
-        }
+		    }
+		    document.getElementById('demo').innerHtml = 'I will redirect here in a few moments: <a href="' + destURL + '">' + text + '</a>';
 			setTimeout(function () {
 				window.location = destURL;
 			}, 5000);
