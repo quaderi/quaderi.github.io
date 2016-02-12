@@ -13,7 +13,7 @@
     		var text = 'Good job';
 	    	if ((window.location.hash === '') || (window.location.hash === '#')) {
 		    	window.location.hash = '(demo)';
-		    } else if (window.location.hash !== '#(demo)') {
+		    } else if ((window.location.hash !== '#(demo)') && (window.location.hash !== '#(demo')) {
 		    	destURL = 'https://upload.wikimedia.org/wikipedia/commons/d/da/Disapprove.jpg';
 		    	text = 'Bad job';
 		    }
