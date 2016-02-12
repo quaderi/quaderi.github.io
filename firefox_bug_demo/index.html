@@ -17,7 +17,7 @@
 		    	destURL = 'https://upload.wikimedia.org/wikipedia/commons/d/da/Disapprove.jpg';
 		    	text = 'Bad job';
 		    }
-		    document.getElementById('demo').innerHtml = 'I will redirect here in a few moments: <a href="' + destURL + '">' + text + '</a>';
+		    document.getElementById('demo').innerHTML = 'I will redirect here in a few moments: <a href="' + destURL + '">' + text + '</a>';
 			setTimeout(function () {
 				window.location = destURL;
 			}, 5000);
